@@ -4,4 +4,5 @@ serve.js
 verify-removal.js
 remove-shop.js
 remove-search.js
+remove-gravity-forms.js
 node_modules/
