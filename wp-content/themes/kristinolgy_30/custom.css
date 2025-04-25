@@ -1,0 +1,95 @@
+/*
+File:		custom.css - Kristinology.com custom CSS
+Date:		September 15, 2011
+Description:	Custom theme work by Jesse Petersen
+Author URI:	http://www.petersenmediagroup.com
+*/
+
+
+
+/* -- Global -- */
+body { background: url(./images/fabric-background.jpg) top center repeat; color: #222222; }
+#nav .s { width: 140px; border: 1px solid #92775a; }
+
+/*-- Structure --*/
+#top-image { background: url(./images/top-image.png) top center repeat-x; width: 100%; }
+#inner { margin: 20px auto; padding: 0 !important; width: 960px; border: 2px solid #67adac; }
+.content-sidebar #content, .sidebar-content #content { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #917F5D; padding: 20px 25px 0; width: 490px; }
+.content-sidebar #content-sidebar-wrap, .sidebar-content #content-sidebar-wrap {     background: url("./images/body-background.jpg") repeat scroll 0 0 #FFFFFF;   margin-bottom: 0px; padding: 30px; width: 920px; }
+.sidebar-content #content, .content-sidebar #content { width: 490px; margin: 0 20px 10px 10px; }
+
+/*-- Typography --*/
+a, a:visited { color: #d64040; text-decoration: none; }
+
+a:hover { color: #d64040; text-decoration: underline; }
+#content h2 a:hover { color: #d64040; }
+#content h4 { font-weight: bold; margin-top: 2em; margin-bottom: 1.6em; }
+
+/*-- Captions --*/
+.wp-caption p.wp-caption-text { margin: 10px auto 0px !important; text-align: center; font-size: 1em; }
+.wp-caption { margin-bottom: .75em; }
+
+/*-- Images --*/
+#content .post p img.wp-smiley, #content .post p img.wp-wink { border: none; }
+img.alignleft { display:inline; margin:0 10px 4px 0; padding:0; }
+img.alignright { display:inline; margin:0 0 4px 10px; padding:0; }
+img.aligncenter { margin: 0 auto 4px; padding:0; }
+
+/* -- Header -- */
+#header { height: 216px; width: 1130px !important; background: url(./images/header-2011.png) top center no-repeat; }
+#header #title-area { margin-left: -2000px; }
+
+/* -- Nav -- */
+#nav { background: url(./images/nav-bg.jpg) top center no-repeat; padding-top: 10px; height: 60px !important; margin-top: -10px; border: 1px solid #92775a; box-shadow: 0 9px 9px #333333; }
+#nav .wrap { background: url(./images/nav-bg.jpg) top center no-repeat; background-image: none; padding-bottom: 10px; }
+#nav li a { color: #92775a; background-image: none !important; padding: 13px 22px 12px 22px; font-family: Arial, Tahoma, Verdana, sans-serif; font-weight: bold; }
+#nav li a:active, #nav .current_page_item a, #nav .current_page_item a:hover { color: #92775a; background: url(./images/nav-item-tape.png) top left no-repeat !important; padding: 13px 24px 12px 24px; font-family: Arial, Tahoma, Verdana, sans-serif; }
+#nav li a:hover { color: #92775a; background: url(./images/nav-hover-tape.png) top left no-repeat !important; padding: 13px 22px 12px 22px; font-family: Arial, Tahoma, Verdana, sans-serif; }
+#nav li li a, #nav li li a:link, #nav li li a:visited { background: #fff; color: #92775a; border-left: 1px solid #92775a; border-right: 1px solid #92775a; border-bottom: 1px solid #92775a; padding: 7px 24px 6px 24px; font-family: Arial, Tahoma, Verdana, sans-serif; }
+#nav li li a:hover { background-color: #fff !important; background-image: url(./images/nav-hover-tape.png) top left no-repeat !important; color: #92775a; border-left: 1px solid #92775a; border-right: 1px solid #92775a; border-bottom: 1px solid #ac1d1d; padding: 7px 24px 6px 24px; font-family: Arial, Tahoma, Verdana, sans-serif; }
+#nav .searchsubmit { display: none; }
+
+/* -- Posts -- */
+#content .post .title-button { height: 60px; width: 60px; margin-left: -62px; background: url(./images/button.png) -0 0 no-repeat; overflow: visible; }
+#content h1, #content h2 { text-align: left; }
+.post-meta, .post-info { text-align: left; font-style: normal; }
+.top-meta { margin-bottom: 1em; }
+#content .entry-title { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #263b3b; line-height: 1.5em; }
+.time, .post-comments, .categories { background: none; margin: 0 0 0 3px; padding: 0 0 2px 0px; }
+p.dsq-editedtxt { display: none !important; }
+.comment-right { float: right; }
+.type-page .top-meta { display: none; }
+/*.signature { background: url(./images/signature.jpg) no-repeat; }*/
+
+/* -- Pages -- */
+
+
+/* -- Sidebars -- */
+#sidebar .widget, #sidebar-alt .widget { background-color: #FFFFFF; border: 1px solid #917F5D; margin: 5px 0px 15px; padding: 10px; width: 280px !important; }
+#sidebar { background: url("./images/sidebar-bg.jpg") repeat-y scroll 0 0 transparent; display: inline; float: right; font-size: 13px; margin-top: 0; width: 320px; padding-top:5px; }
+#sidebar .quoted_comments_widget { background: url(./images/comments-sidebar.png) top right no-repeat; margin: 0 0 30px 0; padding: 0; }
+#sidebar .widget_feedreading_blogroll { background: #fff; margin: 0 0 30px 0; padding: 0; }
+#sidebar #feedreadingblogroll-2 h4.widgettitle { margin-bottom: 1em; }
+#sidebar-alt a img { margin: 0 0 5px 0; padding: 0; border: 1px solid #333; }
+#sidebar-alt a:hover img { margin: 0 0 5px 0; padding: 0; border: 1px solid #000; }
+#sidebar li, #sidebar-alt li { border-bottom: 1px dashed #444;; background: none; padding: 0 0 3px 8px; margin-bottom: 1em; }
+#sidebar #feedreadingblogroll-2 li { border-bottom: none; }
+#sidebar h4, #sidebar-alt h4 { border-bottom: 1px solid #555555; font-size: 17px; font-family: Arial, Tahoma, Verdana, sans-serif; color: #000; }
+li.feedreading_bookmark div abbr, li.feedreading_bookmark div small { border: none; font-size: 1em; }
+/*#sidebar .user-profile, */#sidebar.sidebar div#kadom_ads-3.widget { border-bottom: none; margin-bottom: 0; }
+#sidebar.sidebar div#kadom_ads-4.widget { border-top: 0; margin-top: -12px; }
+#sidebar .user-profile { border-bottom: none; margin-bottom: 0; }
+#sidebar .social-profiles { border-top: none; margin-top: 0; padding-left: 45px; width: 245px !important; }
+.social-profiles .widget-wrap {width: 200px; margin-left: 22px;}
+#sidebar .social-profiles img { margin-right: 10px; }
+#sidebar .widget_feedreading_blogroll { margin: 5px 0 15px;
+    padding: 10px;
+    width: 280px !important; }
+
+/* -- Footer -- */
+#footer { background: url("./images/body-background.jpg") repeat scroll top center #92775a; border-top: 2px solid #67adac; color: #92775a; font-weight: bold; }
+#footer .gototop { width: 300px; }
+#footer .creds { width: 550px; }
+#footer a, #footer a:visited { color: #000; text-decoration: none; }
+#footer a:hover { color: #92775a; text-decoration: underline; }
+#footer p { margin: 0; padding: 0; }

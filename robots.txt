@@ -1,0 +1,4 @@
+User-agent: *
+
+Sitemap: http://www.kristinology.com/sitemap.xml.gz
+Sitemap: http://www.kristinology.com/sitemap.xml

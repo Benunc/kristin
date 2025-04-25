@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="robots" content="noodp,noydir">
+		<title>Ruby&#8217;s — kris·tin·ol·o·gy &#8211; Kristin Petersen&#039;s Blog</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" type="application/rss+xml" title="kris·tin·ol·o·gy - Kristin Petersen&#039;s Blog &raquo; Feed" href="http://feeds.feedburner.com/kristinology">
+<link rel="alternate" type="application/rss+xml" title="kris·tin·ol·o·gy - Kristin Petersen&#039;s Blog &raquo; Comments Feed" href="./../../comments/feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="kris·tin·ol·o·gy - Kristin Petersen&#039;s Blog &raquo; Ruby&#039;s Tag Feed" href="./feed/index.html">
+<link rel="canonical" href="./index.html">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍🔥","🐦​🔥")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" id="mocha-child-theme-mod-css" href="./../../wp-content/themes/kristinolgy_30/style.css?ver=1.0" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css" type="text/css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<link rel="stylesheet" id="wp-block-library-css" href="./../../wp-includes/css/dist/block-library/style.min.css?ver=6.8" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}</style>
+<style id="global-styles-inline-css" type="text/css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
+<style id="akismet-widget-style-inline-css" type="text/css">.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}</style>
+<link rel="stylesheet" id="simple-social-icons-font-css" href="./../../wp-content/plugins/simple-social-icons/css/style.css?ver=3.0.2" type="text/css" media="all">
+<script type="text/javascript" src="./../../wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="./../../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src=".//wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3" id="html5shiv-js"></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="./../../wp-json/index.html">
+<link rel="alternate" title="JSON" type="application/json" href="./../../wp-json/wp/v2/tags/218/index.html">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../xmlrpc.php?rsd">
+ 
+<script type="text/javascript" language="javascript" src="./../../wp-content/plugins/themesmith/js/swfobject.js"></script> 
+<script type="text/javascript" language="javascript" src="./../../wp-content/plugins/themesmith/js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript" language="javascript">jQuery(document).ready(function(){       
+       jQuery('.themesmith-photos a').lightBox({ path: ".//wp-content/plugins/themesmith/images/"});
+    });</script>
+<link rel="stylesheet" type="text/css" href="./../../wp-content/plugins/themesmith/css/jquery.lightbox-0.5.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./../../wp-content/plugins/themesmith/css/themesmith.css" media="screen"> 
+<style type="text/css">.themesmith-photos img { padding: 12px; border-color:#dddddd; background-color: #f7f7f7}</style>
+<link rel="icon" href="./../../wp-content/themes/kristinolgy_30/images/favicon.ico">
+<link rel="pingback" href="./../../xmlrpc.php">
+<link rel="stylesheet" type="text/css" media="screen" href="./../../wp-content/themes/kristinolgy_30/custom.css">
+</head>
+<body class="archive tag tag-rubys tag-218 wp-theme-genesis wp-child-theme-kristinolgy_30 header-full-width content-sidebar">
+<div id="wrap">
+<div id="header"><div class="wrap"><div id="title-area"><p id="title"><a href="./../../index.html">kris·tin·ol·o·gy - Kristin Petersen&#039;s Blog</a></p></div></div></div>
+<div id="nav"><div class="wrap"><ul id="menu-nav-menu" class="menu genesis-nav-menu menu-primary">
+<li id="menu-item-854" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-854"><a href="http://www.kristinology.com/">Home</a></li>
+<li id="menu-item-833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-833"><a href="./../../about-me/index.html">About Me</a></li>
+<li id="menu-item-834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-834"><a href="./../../contact-me/index.html">Contact Me</a></li>
+<li id="menu-item-836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-836">
+<a href="http://www.kristinology.com/categories/">Categories</a>
+<ul class="sub-menu">
+	<li id="menu-item-1669" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1669"><a href="./../../category/allergies-2/index.html">Allergies</a></li>
+	<li id="menu-item-845" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-845"><a href="./../../category/cf/index.html">Cystic Fibrosis</a></li>
+	<li id="menu-item-839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-839"><a href="./../../category/family/index.html">Family</a></li>
+	<li id="menu-item-3837" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3837"><a href="./../../category/foster-care-2/index.html">Children</a></li>
+	<li id="menu-item-4163" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4163"><a href="./../../category/nuggets/index.html">Nuggets</a></li>
+	<li id="menu-item-1903" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1903"><a href="./../../category/recipes/index.html">Recipes</a></li>
+	<li id="menu-item-4164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4164"><a href="./../../category/reviews/index.html">Food Reviews</a></li>
+	<li id="menu-item-840" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-840"><a href="./../../category/travel/index.html">Travel</a></li>
+</ul>
+</li>
+<li id="menu-item-850" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-850">
+<a href="http://www.kristinology.com/archives/">Archives</a>
+<ul class="sub-menu">
+	<li id="menu-item-5534" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5534"><a href="http://www.kristinology.com/2014/12/">December 2014</a></li>
+	<li id="menu-item-5531" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5531"><a href="http://www.kristinology.com/2014/11/">November 2014</a></li>
+	<li id="menu-item-5504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5504"><a href="http://www.kristinology.com/2014/10/">October 2014</a></li>
+	<li id="menu-item-5277" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5277"><a href="http://www.kristinology.com/2014/07/">July 2014</a></li>
+	<li id="menu-item-5206" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5206"><a href="http://www.kristinology.com/2014/06/">June 2014</a></li>
+	<li id="menu-item-5205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5205"><a href="http://www.kristinology.com/2014/05/">May 2014</a></li>
+	<li id="menu-item-5185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5185"><a href="http://www.kristinology.com/2014/04/">April 2014</a></li>
+	<li id="menu-item-5151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5151"><a href="http://www.kristinology.com/2014/03/">March 2014</a></li>
+	<li id="menu-item-5149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5149"><a href="http://www.kristinology.com/2014/02/">February 2014</a></li>
+	<li id="menu-item-5109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5109"><a href="http://www.kristinology.com/2014/01/">January 2014</a></li>
+	<li id="menu-item-5108" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5108">
+<a href="http://www.kristinology.com/2013/">2013</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5107" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5107"><a href="http://www.kristinology.com/2013/04/">April 2013</a></li>
+		<li id="menu-item-5067" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5067"><a href="http://www.kristinology.com/2013/01/">January 2013</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5068" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5068">
+<a href="http://www.kristinology.com/2012/">2012</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5066" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5066"><a href="http://www.kristinology.com/2012/12/">December 2012</a></li>
+		<li id="menu-item-5017" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5017"><a href="http://www.kristinology.com/2012/11/">November 2012</a></li>
+		<li id="menu-item-5016" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5016"><a href="http://www.kristinology.com/2012/10/">October 2012</a></li>
+		<li id="menu-item-5015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5015"><a href="http://www.kristinology.com/2012/09/">September 2012</a></li>
+		<li id="menu-item-5014" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5014"><a href="http://www.kristinology.com/2012/08/">August 2012</a></li>
+		<li id="menu-item-4968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4968"><a href="http://www.kristinology.com/2012/07/">July 2012</a></li>
+		<li id="menu-item-4967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4967"><a href="http://www.kristinology.com/2012/06/">June 2012</a></li>
+		<li id="menu-item-4966" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4966"><a href="http://www.kristinology.com/2012/05/">May 2012</a></li>
+		<li id="menu-item-4965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4965"><a href="http://www.kristinology.com/2012/04/">April 2012</a></li>
+		<li id="menu-item-4807" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4807"><a href="http://www.kristinology.com/2012/03/">March 2012</a></li>
+		<li id="menu-item-4806" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4806"><a href="http://www.kristinology.com/2012/02/">February 2012</a></li>
+		<li id="menu-item-4583" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4583"><a href="http://www.kristinology.com/2012/01/">January 2012</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4582" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4582">
+<a href="http://www.kristinology.com/2011/">2011</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4442" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4442"><a href="http://www.kristinology.com/2011/12/">December 2011</a></li>
+		<li id="menu-item-4441" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4441"><a href="http://www.kristinology.com/2011/11/">November 2011</a></li>
+		<li id="menu-item-4440" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4440"><a href="http://www.kristinology.com/2011/10/">October 2011</a></li>
+		<li id="menu-item-4439" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4439"><a href="http://www.kristinology.com/2011/09/">September 2011</a></li>
+		<li id="menu-item-3959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3959"><a href="http://www.kristinology.com/2011/08/">August 2011</a></li>
+		<li id="menu-item-3816" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3816"><a href="http://www.kristinology.com/2011/07/">July 2011</a></li>
+		<li id="menu-item-3485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3485"><a href="http://www.kristinology.com/2011/06/">June 2011</a></li>
+		<li id="menu-item-3484" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3484"><a href="http://www.kristinology.com/2011/05/">May 2011</a></li>
+		<li id="menu-item-2904" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2904"><a href="http://www.kristinology.com/2011/04/">April 2011</a></li>
+		<li id="menu-item-2637" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2637"><a href="http://www.kristinology.com/2011/03/">March 2011</a></li>
+		<li id="menu-item-2456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2456"><a href="http://www.kristinology.com/2011/02/">February 2011</a></li>
+		<li id="menu-item-2338" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2338"><a href="http://www.kristinology.com/2011/01/">January 2011</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2339" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2339">
+<a href="http://www.kristinology.com/2010/">2010</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2185"><a href="http://www.kristinology.com/2010/12/">December 2010</a></li>
+		<li id="menu-item-2026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2026"><a href="http://www.kristinology.com/2010/11/">November 2010</a></li>
+		<li id="menu-item-1815" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1815"><a href="http://www.kristinology.com/2010/10/">October 2010</a></li>
+		<li id="menu-item-1393" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1393"><a href="http://www.kristinology.com/2010/09/">September 2010</a></li>
+		<li id="menu-item-1104" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1104"><a href="http://www.kristinology.com/2010/08/">August 2010</a></li>
+		<li id="menu-item-853" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-853"><a href="http://www.kristinology.com/2010/07/">July 2010</a></li>
+		<li id="menu-item-852" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-852"><a href="http://www.kristinology.com/2010/06/">June 2010</a></li>
+		<li id="menu-item-851" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-851"><a href="http://www.kristinology.com/2010/05/">May 2010</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-4157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4157"><a href="./../../sponsor/index.html">Sponsor</a></li>
+<li id="menu-item-4158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4158"><a target="_blank" href="http://astore.amazon.com/kristinology-20">Shop</a></li>
+<li class="right search"><form method="get" class="searchform search-form" action=".//" role="search">
+<input type="text" value="Search this website &#x02026;" name="s" class="s search-input" onfocus="if ('Search this website &#x2026;' === this.value) {this.value = '';}" onblur="if ('' === this.value) {this.value = 'Search this website &#x2026;';}"><input type="submit" class="searchsubmit search-submit" value="Search">
+</form></li>
+</ul></div></div>
+<div id="inner"><div id="content-sidebar-wrap">
+<div id="content" class="hfeed"><div class="post-3495 post type-post status-publish format-standard hentry category-family category-memories category-travel tag-corona-del-mar tag-coronado-island tag-hollywood tag-pch tag-rancho-santa-margarita tag-rosemead tag-rsm-lake tag-rubys tag-saddleback-mountains tag-unconditional-surrender-statue entry">
+<h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="./../../california-in-pictures/index.html">California, In Pictures</a></h2>
+<div class="post-info">
+<span class="date published time" title="2011-06-03T00:06:09-04:00">June 3, 2011</span>  By <span class="author vcard"><span class="fn"><a href="./../../author/Kristin/index.html" rel="author">Kristin</a></span></span> <span class="post-comments"><a href="./../../california-in-pictures/index.html#comments"><span class="dsq-postid" data-dsqidentifier="3495 http://www.kristinology.com/?p=3495">5 Comments</span></a></span> </div>
+<div class="entry-content">
+<p>I&#8217;ve already posted some pictures of our vacation to California, but there are so many more! Jesse was taking pictures like crazy and his turned out really great with the fancy camera. Here&#8217;s a few (or a lot) of our favorite things:</p>
+<p>It&#8217;s hard to pick, but I think my favorite parts of vacation was visiting all the places we used to frequent years ago. I&#8217;m a very sentimental and memory loving person, so seeing my old house and old town was high on my priorities for while we were there. Plus I wanted Jesse to see all my old favorite places.</p>
+<div id="attachment_3499" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4066.jpg"><img decoding="async" aria-describedby="caption-attachment-3499" class="size-large wp-image-3499" title="DSC_4066" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4066-490x278.jpg" alt="" width="490" height="278" srcset="./../../wp-content/uploads/2011/06/DSC_4066-490x278.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4066-150x85.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4066-220x124.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4066.jpg 900w" sizes="(max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3499" class="wp-caption-text">Rancho sign</p>
+</div>
+<div id="attachment_3500" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4035.jpg"><img decoding="async" aria-describedby="caption-attachment-3500" class="size-large wp-image-3500" title="DSC_4035" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4035-490x273.jpg" alt="" width="490" height="273" srcset="./../../wp-content/uploads/2011/06/DSC_4035-490x273.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4035-150x83.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4035-220x122.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4035.jpg 900w" sizes="(max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3500" class="wp-caption-text">A walk down memory lane, our old neighborhood</p>
+</div>
+<div id="attachment_3501" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4074.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3501" class="size-large wp-image-3501" title="DSC_4074" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4074-490x333.jpg" alt="" width="490" height="333" srcset="./../../wp-content/uploads/2011/06/DSC_4074-490x333.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4074-150x102.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4074-220x149.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4074.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3501" class="wp-caption-text">Jesse and me at the lake</p>
+</div>
+<div id="attachment_3502" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4099.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3502" class="size-large wp-image-3502" title="DSC_4099" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4099-490x248.jpg" alt="" width="490" height="248" srcset="./../../wp-content/uploads/2011/06/DSC_4099-490x248.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4099-150x76.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4099-220x111.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4099.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3502" class="wp-caption-text">The family at the lake</p>
+</div>
+<div id="attachment_3509" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4140.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3509" class="size-large wp-image-3509" title="DSC_4140" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4140-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4140-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4140-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4140-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4140.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3509" class="wp-caption-text">Jesse and me appreciating the mountains</p>
+</div>
+<div id="attachment_3510" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4148.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3510" class="size-large wp-image-3510" title="DSC_4148" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4148-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4148-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4148-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4148-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4148.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3510" class="wp-caption-text">Andrew and Nicole chasing birds</p>
+</div>
+<div id="attachment_3511" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4274.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3511" class="size-large wp-image-3511" title="DSC_4274" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4274-490x284.jpg" alt="" width="490" height="284" srcset="./../../wp-content/uploads/2011/06/DSC_4274-490x284.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4274-150x87.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4274-220x127.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4274.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3511" class="wp-caption-text">We loved seeing these purple trees everywhere</p>
+</div>
+<div id="attachment_3512" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4293.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3512" class="size-large wp-image-3512" title="DSC_4293" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4293-490x213.jpg" alt="" width="490" height="213" srcset="./../../wp-content/uploads/2011/06/DSC_4293-490x213.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4293-150x65.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4293-220x95.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4293.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3512" class="wp-caption-text">We gawked at the Bugatti Veyron and the fancy shops along Rodeo Drive</p>
+</div>
+<div id="attachment_3513" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4317.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3513" class="size-large wp-image-3513" title="DSC_4317" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4317-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4317-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4317-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4317-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4317.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3513" class="wp-caption-text">Jesse thoroughly enjoyed his Pink</p>
+</div>
+<div id="attachment_3514" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4346.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3514" class="size-large wp-image-3514" title="DSC_4346" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4346-490x285.jpg" alt="" width="490" height="285" srcset="./../../wp-content/uploads/2011/06/DSC_4346-490x285.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4346-150x87.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4346-220x128.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4346.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3514" class="wp-caption-text">We took a drive through Hollywood</p>
+</div>
+<div id="attachment_3515" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4374.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3515" class="size-large wp-image-3515" title="DSC_4374" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4374-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4374-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4374-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4374-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4374.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3515" class="wp-caption-text">The family overlooking the Hollywood hills</p>
+</div>
+<p>We were all so excited for the graduation events. We managed to score front row seats for both the hooding ceremony and the graduation ceremony. I&#8217;m pretty sure Ashley&#8217;s friends thought we were a little crazy. We had our seats so early that we got to watch the rehearsal too. Dad was giving all Ashley&#8217;s classmates high fives as they passed us to take their seats. But our craziness paid off with some great pictures!</p>
+<div id="attachment_3516" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4460.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3516" class="size-large wp-image-3516" title="DSC_4460" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4460-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4460-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4460-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4460-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4460.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3516" class="wp-caption-text">The main event</p>
+</div>
+<div id="attachment_3517" style="width: 296px" class="wp-caption aligncenter">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4539.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3517" class="size-large wp-image-3517" title="DSC_4539" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4539-286x400.jpg" alt="" width="286" height="400" srcset="./../../wp-content/uploads/2011/06/DSC_4539-286x400.jpg 286w, ./../../wp-content/uploads/2011/06/DSC_4539-107x150.jpg 107w, ./../../wp-content/uploads/2011/06/DSC_4539-171x240.jpg 171w, ./../../wp-content/uploads/2011/06/DSC_4539.jpg 429w" sizes="auto, (max-width: 286px) 100vw, 286px"></a><p id="caption-attachment-3517" class="wp-caption-text">Ashley getting hooded</p>
+</div>
+<div id="attachment_3518" style="width: 318px" class="wp-caption aligncenter">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4557.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3518" class="size-large wp-image-3518" title="DSC_4557" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4557-308x400.jpg" alt="" width="308" height="400" srcset="./../../wp-content/uploads/2011/06/DSC_4557-308x400.jpg 308w, ./../../wp-content/uploads/2011/06/DSC_4557-115x150.jpg 115w, ./../../wp-content/uploads/2011/06/DSC_4557-185x240.jpg 185w, ./../../wp-content/uploads/2011/06/DSC_4557.jpg 463w" sizes="auto, (max-width: 308px) 100vw, 308px"></a><p id="caption-attachment-3518" class="wp-caption-text">Ashley after hooding</p>
+</div>
+<div id="attachment_3523" style="width: 460px" class="wp-caption aligncenter">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4574.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3523" class="size-large wp-image-3523" title="DSC_4574" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4574-450x400.jpg" alt="" width="450" height="400" srcset="./../../wp-content/uploads/2011/06/DSC_4574-450x400.jpg 450w, ./../../wp-content/uploads/2011/06/DSC_4574-150x133.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4574-220x195.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4574.jpg 900w" sizes="auto, (max-width: 450px) 100vw, 450px"></a><p id="caption-attachment-3523" class="wp-caption-text">Dad checking Ashley&#39;s hood</p>
+</div>
+<div id="attachment_3524" style="width: 199px" class="wp-caption aligncenter">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4580.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3524" class="size-large wp-image-3524" title="DSC_4580" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4580-189x400.jpg" alt="" width="189" height="400" srcset="./../../wp-content/uploads/2011/06/DSC_4580-189x400.jpg 189w, ./../../wp-content/uploads/2011/06/DSC_4580-71x150.jpg 71w, ./../../wp-content/uploads/2011/06/DSC_4580-113x240.jpg 113w, ./../../wp-content/uploads/2011/06/DSC_4580.jpg 284w" sizes="auto, (max-width: 189px) 100vw, 189px"></a><p id="caption-attachment-3524" class="wp-caption-text">Ashley hooded</p>
+</div>
+<div id="attachment_3527" style="width: 268px" class="wp-caption aligncenter">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4617.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3527" class="size-large wp-image-3527" title="DSC_4617" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4617-258x400.jpg" alt="" width="258" height="400" srcset="./../../wp-content/uploads/2011/06/DSC_4617-258x400.jpg 258w, ./../../wp-content/uploads/2011/06/DSC_4617-97x150.jpg 97w, ./../../wp-content/uploads/2011/06/DSC_4617-155x240.jpg 155w, ./../../wp-content/uploads/2011/06/DSC_4617.jpg 388w" sizes="auto, (max-width: 258px) 100vw, 258px"></a><p id="caption-attachment-3527" class="wp-caption-text">Ashley laughing at our crazy family</p>
+</div>
+<div id="attachment_3528" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4795.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3528" class="size-large wp-image-3528" title="DSC_4795" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4795-490x312.jpg" alt="" width="490" height="312" srcset="./../../wp-content/uploads/2011/06/DSC_4795-490x312.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4795-150x95.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4795-220x140.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4795.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3528" class="wp-caption-text">Ashley&#39;s hand shake</p>
+</div>
+<div id="attachment_3529" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4797.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3529" class="size-large wp-image-3529" title="DSC_4797" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4797-490x316.jpg" alt="" width="490" height="316" srcset="./../../wp-content/uploads/2011/06/DSC_4797-490x316.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4797-150x97.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4797-220x142.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4797.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3529" class="wp-caption-text">Ashley receiving her diploma</p>
+</div>
+<div id="attachment_3530" style="width: 276px" class="wp-caption aligncenter">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4817.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3530" class="size-large wp-image-3530" title="DSC_4817" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4817-266x400.jpg" alt="" width="266" height="400" srcset="./../../wp-content/uploads/2011/06/DSC_4817-266x400.jpg 266w, ./../../wp-content/uploads/2011/06/DSC_4817-100x150.jpg 100w, ./../../wp-content/uploads/2011/06/DSC_4817-160x240.jpg 160w, ./../../wp-content/uploads/2011/06/DSC_4817.jpg 400w" sizes="auto, (max-width: 266px) 100vw, 266px"></a><p id="caption-attachment-3530" class="wp-caption-text">Ashley exiting graduation</p>
+</div>
+<div id="attachment_3531" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4832.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3531" class="size-large wp-image-3531" title="DSC_4832" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4832-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4832-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4832-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4832-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4832.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3531" class="wp-caption-text">Ashley with proud parents</p>
+</div>
+<div id="attachment_3532" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4840.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3532" class="size-large wp-image-3532" title="DSC_4840" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4840-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4840-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4840-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4840-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4840.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3532" class="wp-caption-text">Ashley with proud siblings</p>
+</div>
+<p>After the graduation festivities, Ashley was able to join us for more site seeing and remembering of memories.</p>
+<div id="attachment_3533" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4919.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3533" class="size-large wp-image-3533" title="DSC_4919" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4919-490x277.jpg" alt="" width="490" height="277" srcset="./../../wp-content/uploads/2011/06/DSC_4919-490x277.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4919-150x85.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4919-220x124.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4919.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3533" class="wp-caption-text">The beach we loved going to for years</p>
+</div>
+<div id="attachment_3534" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4882.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3534" class="size-large wp-image-3534" title="DSC_4882" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4882-490x248.jpg" alt="" width="490" height="248" srcset="./../../wp-content/uploads/2011/06/DSC_4882-490x248.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4882-150x76.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4882-220x111.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4882.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3534" class="wp-caption-text">Beautiful beach view</p>
+</div>
+<div id="attachment_3535" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4898.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3535" class="size-large wp-image-3535" title="DSC_4898" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4898-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4898-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4898-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4898-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4898.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3535" class="wp-caption-text">Mom and Dad enjoying the beach</p>
+</div>
+<div id="attachment_3536" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4877.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3536" class="size-large wp-image-3536" title="DSC_4877" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4877-490x362.jpg" alt="" width="490" height="362" srcset="./../../wp-content/uploads/2011/06/DSC_4877-490x362.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4877-150x111.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4877-220x162.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4877.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3536" class="wp-caption-text">We&#39;ve always laughed at this triangular house, no piece of land goes unused</p>
+</div>
+<div id="attachment_3537" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4931.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3537" class="size-large wp-image-3537" title="DSC_4931" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4931-490x266.jpg" alt="" width="490" height="266" srcset="./../../wp-content/uploads/2011/06/DSC_4931-490x266.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4931-150x81.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4931-220x119.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4931.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3537" class="wp-caption-text">View driving down Pacific Coast Highway</p>
+</div>
+<div id="attachment_3538" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4963.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3538" class="size-large wp-image-3538" title="DSC_4963" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4963-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4963-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4963-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4963-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4963.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3538" class="wp-caption-text">Ruby</p>
+</div>
+<div id="attachment_3539" style="width: 276px" class="wp-caption aligncenter">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4991.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3539" class="size-large wp-image-3539" title="DSC_4991" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4991-266x400.jpg" alt="" width="266" height="400" srcset="./../../wp-content/uploads/2011/06/DSC_4991-266x400.jpg 266w, ./../../wp-content/uploads/2011/06/DSC_4991-99x150.jpg 99w, ./../../wp-content/uploads/2011/06/DSC_4991-159x240.jpg 159w, ./../../wp-content/uploads/2011/06/DSC_4991.jpg 399w" sizes="auto, (max-width: 266px) 100vw, 266px"></a><p id="caption-attachment-3539" class="wp-caption-text">La Jolla Cove waves crashing</p>
+</div>
+<div id="attachment_3540" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4993.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3540" class="size-large wp-image-3540" title="DSC_4993" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_4993-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_4993-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_4993-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_4993-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_4993.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3540" class="wp-caption-text">La Jolla Cove seals soaking up the sun</p>
+</div>
+<div id="attachment_3541" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5044.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3541" class="size-large wp-image-3541" title="DSC_5044" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5044-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_5044-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5044-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5044-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5044.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3541" class="wp-caption-text">La Jolla Cove beach</p>
+</div>
+<div id="attachment_3542" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5058.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3542" class="size-large wp-image-3542" title="DSC_5058" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5058-490x304.jpg" alt="" width="490" height="304" srcset="./../../wp-content/uploads/2011/06/DSC_5058-490x304.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5058-150x93.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5058-220x136.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5058.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3542" class="wp-caption-text">Jesse and me at La Jolla Cove</p>
+</div>
+<div id="attachment_3543" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5151.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3543" class="size-large wp-image-3543" title="DSC_5151" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5151-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_5151-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5151-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5151-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5151.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3543" class="wp-caption-text">Hang gliders over the ocean</p>
+</div>
+<div id="attachment_3544" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5186.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3544" class="size-large wp-image-3544" title="DSC_5186" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5186-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_5186-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5186-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5186-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5186.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3544" class="wp-caption-text">The bridge to Coronado Island</p>
+</div>
+<div id="attachment_3545" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5193.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3545" class="size-large wp-image-3545" title="DSC_5193" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5193-490x326.jpg" alt="" width="490" height="326" srcset="./../../wp-content/uploads/2011/06/DSC_5193-490x326.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5193-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5193-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5193.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3545" class="wp-caption-text">We thought the valet parking for boats was too funny</p>
+</div>
+<div id="attachment_3546" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5243.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3546" class="size-large wp-image-3546" title="DSC_5243" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5243-490x308.jpg" alt="" width="490" height="308" srcset="./../../wp-content/uploads/2011/06/DSC_5243-490x308.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5243-150x94.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5243-220x138.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5243.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3546" class="wp-caption-text">Andrew and Nicole at Coronado Beach</p>
+</div>
+<div id="attachment_3547" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5263.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3547" class="size-large wp-image-3547" title="DSC_5263" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5263-490x337.jpg" alt="" width="490" height="337" srcset="./../../wp-content/uploads/2011/06/DSC_5263-490x337.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5263-150x103.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5263-220x151.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5263.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3547" class="wp-caption-text">The girls on Coronado Island</p>
+</div>
+<div id="attachment_3548" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5271.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3548" class="size-large wp-image-3548" title="DSC_5271" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5271-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_5271-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5271-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5271-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5271.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3548" class="wp-caption-text">The boys on Coronado Island</p>
+</div>
+<div id="attachment_3549" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5273.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3549" class="size-large wp-image-3549" title="DSC_5273" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5273-490x376.jpg" alt="" width="490" height="376" srcset="./../../wp-content/uploads/2011/06/DSC_5273-490x376.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5273-150x115.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5273-220x169.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5273.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3549" class="wp-caption-text">The boys being told to take a funny picture... Andrew looks the same</p>
+</div>
+<div id="attachment_3550" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5275.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3550" class="size-large wp-image-3550" title="DSC_5275" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5275-490x372.jpg" alt="" width="490" height="372" srcset="./../../wp-content/uploads/2011/06/DSC_5275-490x372.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5275-150x114.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5275-220x167.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5275.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3550" class="wp-caption-text">The boys being told to be funnier</p>
+</div>
+<div id="attachment_3551" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5290.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3551" class="size-large wp-image-3551" title="DSC_5290" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5290-490x325.jpg" alt="" width="490" height="325" srcset="./../../wp-content/uploads/2011/06/DSC_5290-490x325.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5290-150x99.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5290-220x146.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5290.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3551" class="wp-caption-text">Me shopping on Coronado Island</p>
+</div>
+<div id="attachment_3552" style="width: 500px" class="wp-caption alignnone">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5302.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3552" class="size-large wp-image-3552" title="DSC_5302" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5302-490x309.jpg" alt="" width="490" height="309" srcset="./../../wp-content/uploads/2011/06/DSC_5302-490x309.jpg 490w, ./../../wp-content/uploads/2011/06/DSC_5302-150x94.jpg 150w, ./../../wp-content/uploads/2011/06/DSC_5302-220x138.jpg 220w, ./../../wp-content/uploads/2011/06/DSC_5302.jpg 900w" sizes="auto, (max-width: 490px) 100vw, 490px"></a><p id="caption-attachment-3552" class="wp-caption-text">View of the San Diego runway from the top of the famous parking garage</p>
+</div>
+<div id="attachment_3553" style="width: 212px" class="wp-caption aligncenter">
+<a href="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5327.jpg"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-3553" class="size-large wp-image-3553" title="DSC_5327" src="http://www.kristinology.com/wp-content/uploads/2011/06/DSC_5327-202x400.jpg" alt="" width="202" height="400" srcset="./../../wp-content/uploads/2011/06/DSC_5327-202x400.jpg 202w, ./../../wp-content/uploads/2011/06/DSC_5327-76x150.jpg 76w, ./../../wp-content/uploads/2011/06/DSC_5327-121x240.jpg 121w, ./../../wp-content/uploads/2011/06/DSC_5327.jpg 304w" sizes="auto, (max-width: 202px) 100vw, 202px"></a><p id="caption-attachment-3553" class="wp-caption-text">Jesse and me imitating the famous Unconditional Surrender statue</p>
+</div>
+<p>Is that enough pictures for you? Do you feel like you were there too? We really had such a great time. Now we are back home and back to real life. However, not back to our normal sleeping schedule. Adjusting to the time change has been much more difficult coming home than it was when we got out there. It was really hard to get up this morning, but I&#8217;m still up later than normal again. Just think, in three years Ashley will be getting her doctoral degree and we&#8217;ll get to do it all over again. We loved California!</p>
+</div>
+<div class="post-meta">
+<span class="categories">Filed Under: <a href="./../../category/family/index.html" rel="category tag">Family</a>, <a href="./../../category/memories/index.html" rel="category tag">Memories</a>, <a href="./../../category/travel/index.html" rel="category tag">Travel</a></span> <span class="tags">Tagged With: <a href="./../corona-del-mar/index.html" rel="tag">Corona del Mar</a>, <a href="./../coronado-island/index.html" rel="tag">Coronado Island</a>, <a href="./../hollywood/index.html" rel="tag">hollywood</a>, <a href="./../pch/index.html" rel="tag">PCH</a>, <a href="./../rancho-santa-margarita/index.html" rel="tag">Rancho Santa Margarita</a>, <a href="./../rosemead/index.html" rel="tag">rosemead</a>, <a href="./../rsm-lake/index.html" rel="tag">RSM lake</a>, <a href="./index.html" rel="tag">Ruby's</a>, <a href="./../saddleback-mountains/index.html" rel="tag">saddleback mountains</a>, <a href="./../unconditional-surrender-statue/index.html" rel="tag">Unconditional Surrender statue</a></span>
+</div>
+</div></div>
+<div id="sidebar" class="sidebar widget-area">
+<div id="user-profile-3" class="widget user-profile"><div class="widget-wrap">
+<h4 class="widget-title widgettitle">Welcome to Kristinology</h4>
+<p><span class="alignleft"><img alt="" src="https://secure.gravatar.com/avatar/9d44f6d7697395d99585b63cc8d3c34b1f4039b54485afa28c52320eb1cd3bc4?s=85&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/9d44f6d7697395d99585b63cc8d3c34b1f4039b54485afa28c52320eb1cd3bc4?s=170&#038;d=mm&#038;r=g 2x" class="avatar avatar-85 photo" height="85" width="85" loading="lazy" decoding="async"></span>I am a Christ-follower, a wife, a foster mom, a daughter, a sister, and a friend. I'm married to the best husband ever, who also happens to be a Cystic Fibrosis warrior! I'm an aspiring foodie despite my recent onset of food allergies. I love to read comments... let me know your thoughts! <a class="pagelink" href="./../../about-me/index.html">[Read More …]</a></p>
+</div></div>
+<div id="socialprofiles-4" class="widget social-profiles"><div class="widget-wrap">
+<a href="http://feeds.feedburner.com/kristinology" target="&quot;_blank&quot;"><img src="./../../wp-content/plugins/social-profiles-widget/assets/images/inside/Feed_48x48.png" alt="RSS"></a><a href="https://twitter.com/kristinology" target="&quot;_blank&quot;"><img src="./../../wp-content/plugins/social-profiles-widget/assets/images/inside/Twitter_48x48.png" alt="Twitter"></a><a href="http://instagram.com/kristinology" target="&quot;_blank&quot;"><img src="./../../wp-content/plugins/social-profiles-widget/assets/images/inside/Facebook_48x48.png" alt="Facebook"></a>
+</div></div>
+</div>
+</div></div>
+<div id="footer" class="footer"><div class="wrap">
+<div class="gototop"><p><a href="#wrap" rel="nofollow">Return to top of page</a></p></div>
+<div class="creds"><p>Copyright &#x000A9;&nbsp;2025 &middot;  <a href="http://www.studiopress.com/">Genesis Framework</a> &middot; <a href="https://wordpress.org/">WordPress</a> &middot; <a href="./../../wp-login.php">Log in</a></p></div>
+</div></div>
+</div>
+<script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/kristinolgy_30\/*","\/wp-content\/themes\/genesis\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script>
+<script type="text/javascript">var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-930919-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();</script>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">var sc_project=6025322; 
+var sc_invisible=1; 
+var sc_security="66aaa5b3";</script>
+
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><div class="statcounter"><a title="web analytics" href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/6025322/0/66aaa5b3/1/" alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code --><style type="text/css" media="screen"></style>
+<script type="text/javascript" id="disqus_count-js-extra">
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"kristinology"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./../../wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.1.2" id="disqus_count-js"></script>
+</body>
+</html>
