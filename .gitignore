@@ -3,4 +3,5 @@ clean-archives.js
 serve.js
 verify-removal.js
 remove-shop.js
+remove-search.js
 node_modules/
