@@ -1,0 +1,12 @@
+{
+  "name": "static-site-url-fixer",
+  "version": "1.0.0",
+  "description": "Tool to fix relative URLs in static HTML files",
+  "main": "fix-urls.js",
+  "scripts": {
+    "fix": "node fix-urls.js"
+  },
+  "dependencies": {
+    "jsdom": "^21.1.1"
+  }
+} 
