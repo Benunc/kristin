@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# npm and yarn related
+package-lock.json
+package.json
+yarn.lock
+
+# JavaScript build scripts
+*.js
+
+# Exception for HTML/CSS files (static content)
+!*.html
+!*.css
+
+# Log files
+*.log
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo 
