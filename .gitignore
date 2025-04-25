@@ -6,12 +6,10 @@ package-lock.json
 package.json
 yarn.lock
 
-# JavaScript build scripts
-*.js
-
-# Exception for HTML/CSS files (static content)
-!*.html
-!*.css
+# Build/utility scripts (exclude explicitly)
+remove-disqus.js
+fix-urls.js
+fix-kristinology-urls.js
 
 # Log files
 *.log
